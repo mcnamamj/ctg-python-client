@@ -1,0 +1,17 @@
+from enum import Enum
+
+
+class PrimaryPurpose(str, Enum):
+    BASIC_SCIENCE = "BASIC_SCIENCE"
+    DEVICE_FEASIBILITY = "DEVICE_FEASIBILITY"
+    DIAGNOSTIC = "DIAGNOSTIC"
+    ECT = "ECT"
+    HEALTH_SERVICES_RESEARCH = "HEALTH_SERVICES_RESEARCH"
+    OTHER = "OTHER"
+    PREVENTION = "PREVENTION"
+    SCREENING = "SCREENING"
+    SUPPORTIVE_CARE = "SUPPORTIVE_CARE"
+    TREATMENT = "TREATMENT"
+
+    def __str__(self) -> str:
+        return str(self.value)
