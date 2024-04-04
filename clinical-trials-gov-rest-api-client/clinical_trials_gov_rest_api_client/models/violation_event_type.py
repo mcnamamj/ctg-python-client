@@ -1,0 +1,11 @@
+from enum import Enum
+
+
+class ViolationEventType(str, Enum):
+    CORRECTION_CONFIRMED = "CORRECTION_CONFIRMED"
+    ISSUES_IN_LETTER_ADDRESSED_CONFIRMED = "ISSUES_IN_LETTER_ADDRESSED_CONFIRMED"
+    PENALTY_IMPOSED = "PENALTY_IMPOSED"
+    VIOLATION_IDENTIFIED = "VIOLATION_IDENTIFIED"
+
+    def __str__(self) -> str:
+        return str(self.value)
