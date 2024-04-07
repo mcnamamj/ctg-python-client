@@ -85,7 +85,7 @@ def _get_kwargs(
             filter_overall_status_item = filter_overall_status_item_data.value
             json_filter_overall_status.append(filter_overall_status_item)
 
-    params["filter.overallStatus"] = json_filter_overall_status
+    params["filter.overallStatus"] = ",".join(json_filter_overall_status)
 
     params["filter.geo"] = filter_geo
 
@@ -110,7 +110,7 @@ def _get_kwargs(
             post_filter_overall_status_item = post_filter_overall_status_item_data.value
             json_post_filter_overall_status.append(post_filter_overall_status_item)
 
-    params["postFilter.overallStatus"] = json_post_filter_overall_status
+    params["postFilter.overallStatus"] = ",".join(json_post_filter_overall_status)
 
     params["postFilter.geo"] = post_filter_geo
 
