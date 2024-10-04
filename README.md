@@ -16,3 +16,13 @@ Then you'll load in that specification and the local settings via:
 ```
 openapi-python-client update --path ctg-openapi-specification.yaml --config openapi-settings.yaml
 ```
+
+# To use the venv
+source venv/bin/activate
+or 
+venv\Scripts\activate
+
+and then
+pip install build
+
+python -m build

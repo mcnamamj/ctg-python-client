@@ -10,6 +10,8 @@ dist/
 # Environments
 .env
 .venv
+venv/
+venv/
 
 # mypy
 .mypy_cache/
@@ -21,3 +23,4 @@ dmypy.json
 
 /coverage.xml
 /.coverage
+
